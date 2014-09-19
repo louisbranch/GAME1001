@@ -1,3 +1,5 @@
+/* Author: Luiz Branco
+   Student ID: 100945951 */
 #include <iostream>
 using namespace std;
 int main()
@@ -8,9 +10,8 @@ int main()
 	cin >> x >> y;
 	cin.ignore(50, '\n');
 	cin >> ch;
-	cout 
+	cout
 		<< "x is " << x
 		<< ", y is " << y
 		<< " and ch is " << ch << endl;
-	return (0);
 }

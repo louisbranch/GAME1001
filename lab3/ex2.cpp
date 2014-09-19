@@ -1,4 +1,6 @@
-#include <iostream>
+/* Author: Luiz Branco
+   Student ID: 100945951 */
+include <iostream>
 using namespace std;
 int main()
 {
@@ -6,9 +8,8 @@ int main()
 	double z;
 	cout << "Give me 3 numbers:\n";
 	cin >> x >> y >> z;
-	cout 
+	cout
 		<< "x is " << x
 		<< ", y is " << y
 		<< " and z is " << z << endl;
-	return (0);
 }
