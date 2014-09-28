@@ -3,9 +3,12 @@
  * Student ID: 100945651
  *
  * Instructions:
- * Write a program that prompts the user to input five decimal numbers. The program should then add the five decimal numbers, convert the sum to the nearest integer, and print the result.
+ * Write a program that prompts the user to input five decimal numbers.
+ * The program should then add the five decimal numbers, convert the sum to the
+ * nearest integer, and print the result.
  */
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -28,7 +31,7 @@ int main() {
 
   cout
     << "The result is: "
-    << sum
+    << round(sum)
     << endl;
 
   return 0;
