@@ -5,7 +5,7 @@
 const double gravity = 9.8;
 
 double positionUnderGravity (double t, double v0);
-void positionUnderGravityByRef (double t, double v0, double& y);
+void positionUnderGravityByRef (double t, double v0, double &y);
 bool gotoxy(int column, int line);
 
 int main() {
@@ -15,7 +15,7 @@ int main() {
   double v0 = 20;
 
   for (double t = 0; t <= 4.0; t += 0.1) {
-    y = positionUnderGravity(t, v0);
+    positionUnderGravityByRef(t, v0, y);
     gotoxy(++i, y);
     std::cout << "o";
   }
@@ -27,7 +27,7 @@ double positionUnderGravity (double t, double v0) {
   return -0.5 * gravity * t * t + v0 * t;
 }
 
-void positionUnderGravityRef (double t, double v0, double& y) {
+void positionUnderGravityByRef (double t, double v0, double &y) {
   y = -0.5 * gravity * t * t + v0 * t;
 }
 
